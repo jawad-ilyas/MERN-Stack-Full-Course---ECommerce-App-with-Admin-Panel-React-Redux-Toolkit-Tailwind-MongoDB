@@ -8,6 +8,11 @@ dotenv.config({
     path: "./env"
 })
 
+
+app.get("/", (req, res) => {
+    res.send("jawad mughal backend project ")
+})
+
 const portConfiguration = process.env.PORT || 3000
 connectDb()
     .then(() => {
